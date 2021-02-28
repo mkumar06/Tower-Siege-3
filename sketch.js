@@ -10,7 +10,7 @@ function setup() {
     world = engine.world;
 
     ground = new Ground(400, 380, 800, 15);
-    stand = new Ground(390, 350, 240, 10);
+    stand = new Ground(390, 280, 240, 10);
     polygon = new Polygon(600, 200, 20);
     slingshot = new SlingShot(polygon.body, {x: 600, y: 200});
 
@@ -49,7 +49,7 @@ function draw() {
 
 function keyPressed() {
     if(keyCode === 32) {
-        slingshot.attach(this.polygon);
+        slingshot.attach(polygon.body);
     }
 }
 
