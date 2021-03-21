@@ -3,6 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
+var score = 0;
 
 function setup() {
     createCanvas(800, 400);
@@ -45,6 +46,18 @@ function draw() {
     box7.display();
     box8.display();
     box9.display();
+
+    text("SCORE: " + score, 750, 40);
+
+    box1.score();
+    box2.score();
+    box3.score();
+    box4.score();
+    box5.score();
+    box6.score();
+    box7.score();
+    box8.score();
+    box9.score();
 }
 
 function keyPressed() {
