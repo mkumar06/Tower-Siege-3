@@ -31,10 +31,9 @@ class Box {
     pop();
     }
   }
-}
-
-score() {
-  if(this.visibility < 0 && this.visibility > -105) {
-    score++;
+  score() {
+    if(this.Visibility < 0 && this.Visibility > -105) {
+      score++;
+    }
   }
 }
